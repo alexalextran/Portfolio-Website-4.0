@@ -88,12 +88,18 @@ nav{
   align-items: center;
   width: 100%;
   height: 800px;
-  
+  background-color: rgb(255,255,255)
 }
 
 .aboutme__info{
   width: 50%; 
   display: flex;
+}
+
+.aboutme__info--title{
+  padding-bottom: 10px;
+  font-size: 44px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .aboutme__info--details{
@@ -106,11 +112,12 @@ nav{
 }
 
 .aboutme__info--wrapper{
-  width: 50%;
+  width: 70%;
   padding: 50px 50px;
 }
 
 .aboutme__profileimage{
+  
 width: 50%;
 display: flex;
 justify-content: end;
@@ -119,4 +126,5 @@ align-items: center;
 
 .aboutme__profileimage--jpg{
   width: 600px;
+  border: 10px solid black;
 }

@@ -12,7 +12,7 @@ const Aboutme = () => {
 
       
         <div>
-          <h1>About Me</h1>
+          <h1 className="aboutme__info--title">About Me</h1>
           <p>
             Im an student programmer that is currently learning about front end
             development, i aspire to one day become a seinor react developer or
@@ -21,12 +21,13 @@ const Aboutme = () => {
         </div>
         <div>
           <ul className="aboutme__info--details">
-            <li className="aboutme__info--li">Name: Alex Tran</li>
-            <li className="aboutme__info--li">Age: 18 years</li>
-            <li className="aboutme__info--li">Country: Australia, NSW</li>
-            <li className="aboutme__info--li">University: University Of Technology</li>
-            <li className="aboutme__info--li">Avaliability: Interested in any front end position</li>
+            <li className="aboutme__info--li"><b>Name:</b> Alex Tran</li>
+            <li className="aboutme__info--li"><b>Age:</b> 18 years</li>
+            <li className="aboutme__info--li"><b>Country:</b> Australia, NSW</li>
+            <li className="aboutme__info--li"><b>University:</b> University Of Technology</li>
+            <li className="aboutme__info--li"><b>Avaliability:</b> Interested in any front end position</li>
           </ul>
+          <button>Download My resume</button>
         </div>
         </div>
       </div>
