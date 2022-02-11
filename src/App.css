@@ -20,7 +20,7 @@
 }
 
 html{
-  background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(215,215,215,1) 100%);
+  background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(210,210,210,1) 100%);
 }
 
 nav{
@@ -160,18 +160,26 @@ Skills
 }
 
 .skills__title--sub{
-  margin-bottom: 60px;
+  margin-bottom: 100px;
+  color: rgb(0,180,216);
+  border: 6px solid;
+  padding: 10px;
+  font-size: 32px;
 }
 
 .skills__using--card{
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
-  height: 150px;
+  height: 190px;
   align-items: center;
   
 }
 
+.skills__using--title{
+  margin-top: 50px;
+  font-size: 24px;
+}
 
 
 
