@@ -68,3 +68,8 @@ nav{
 .landing__text--title{
   padding: 5px 0px;
 }
+
+.social__icon{
+  width: 40px;
+  margin: 10px 10px;
+}
