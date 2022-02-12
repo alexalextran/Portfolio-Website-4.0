@@ -4,6 +4,7 @@ import Landing from './components/Landing';
 import Aboutme from './components/AboutMe';
 import Mylanguages from './components/MyLanguages';
 import Journey from './components/Journey';
+import Portfolio from './components/Portfolio';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
    <Aboutme />
    <Mylanguages />
    <Journey />
+   <Portfolio />
    </>
   );
 }
