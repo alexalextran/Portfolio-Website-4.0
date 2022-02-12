@@ -5,10 +5,11 @@ const Portfolio = () => {
     document.querySelectorAll(".carousel").forEach((carousel) => {
       const items = carousel.querySelectorAll(".carousel__item");
       const buttons = carousel.querySelectorAll(".carousel__button");
-      console.log(buttons);
+      
       var k = 1;
 
       buttons.forEach((button, i) => {
+       
         button.addEventListener("click", () => {
           // un-select all the items
 
@@ -16,20 +17,27 @@ const Portfolio = () => {
             item.classList.remove("carousel__item--selected")
           );
           buttons.forEach((button) =>
-          button.style.pointerEvents = "all"
+          button.style.pointerEvents = "all",
+          
         );
 
           if (i == 0) {
             if (k == 1) {
-              buttons[0].style.pointerEvents = "none";
-              
+              buttons[i].style.pointerEvents = "none";
+              buttons[i].style.color = "gray";
             }
-            k--;
-          } else {
+            
+            buttons[1].style.color = "rgb(0,180,216)"
+            k--; 
+        
+        }else {
+
             if (k == (items.length - 2)) {
-                buttons[1].style.pointerEvents = "none";
-                
+                buttons[i].style.pointerEvents = "none";
+                buttons[i].style.color = "gray";
               }
+
+              buttons[0].style.color = "rgb(0,180,216)"
             k++;
           }
 
@@ -55,6 +63,12 @@ const Portfolio = () => {
             <h1 className="YTvideos__header--title gold">My Projects</h1>
             <p>here is a compilation of all my projects for each language</p>
           </div>
+          <div className="porfolio__header--nav">
+          <button>HTML&CSS</button>
+          <button>JS only</button>
+          <button>React</button>
+          <button>Java</button>
+          <button>Python</button></div>
           <div className="carousel__item">item 1</div>
           <div className="carousel__item">item 2</div>
           <div className="carousel__item">item 3</div>
