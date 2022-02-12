@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Reactportfoliocards from "../ui/ReactPortfolioCards";
+
 
 const Portfolio = () => {
   function carousel() {
@@ -69,9 +71,10 @@ const Portfolio = () => {
           <button>React</button>
           <button>Java</button>
           <button>Python</button></div>
-          <div className="carousel__item">item 1</div>
-          <div className="carousel__item">item 2</div>
-          <div className="carousel__item">item 3</div>
+
+          
+          <Reactportfoliocards />
+          
         </div>
 
         <div className="carousel__nav">
