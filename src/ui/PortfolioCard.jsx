@@ -7,9 +7,9 @@ const Portfoliocard = (card) => {
                 
             </img>
 
-            <p>
+            <div className='portfolio__cardtext'>
                 {card.text}
-            </p>
+            </div>
         </div>
     );
 }

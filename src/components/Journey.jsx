@@ -7,8 +7,8 @@ const Journey = () => {
         <div className="timeline">
   <div className="container left">
     <div className="content">
-      <h2>2021 Febuary</h2>
-      <p>I started my degree and start learning my first language java, learnt OOP concepts and familarised myself with C based terminology such as loops, arrays, objects.</p>
+      <h2>2021 February</h2>
+      <p>I started my degree and start learning my first language java, learnt OOP concepts and familiarized myself with C based terminology such as loops, arrays, objects.</p>
     </div>
   </div>
   <div className="container right">

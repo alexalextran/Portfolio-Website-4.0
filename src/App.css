@@ -340,7 +340,33 @@ CAROUSEL
   visibility: visible;
   opacity: 1;
   pointer-events: all;
+  z-index: 100;
+ 
+ 
 }
+
+.portfolio__cardtext{
+  position: absolute;
+ opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  transition: all 500ms;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  font-size: 24px;
+}
+
+.carousel__item--selected:hover > .portfolio__cardtext {
+  background-color: rgb(245,245,245, 0.85) ;
+  opacity: 1;
+  
+}
+
 
 .carousel__nav {
   width: 100%;
