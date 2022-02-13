@@ -99,7 +99,7 @@ const Portfolio = () => {
             <button onClick={() => getporftoliocard("js")}>JS only</button>
             <button onClick={() => getporftoliocard("react")}>React</button>
             <button onClick={() => getporftoliocard("java")}>Java</button>
-            <button onClick={() => getporftoliocard("python")}>Python</button>
+          
           </div>
 
 

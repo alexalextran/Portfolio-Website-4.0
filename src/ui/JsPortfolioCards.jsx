@@ -11,15 +11,18 @@ const Jsportfoliocards = () => {
 
     <div>
       <Portfoliocard
-        text="My third react project, i made this as a mini side project, to help myself with programming logic, comes complete with difficulty modes and saves your highest score using local storage"
+        text="First Javascript Project, this is pretty much a mock e-portfolio, i didn't want to turn this into my Eportfolio V4 because i wanted to wait until i learnt react, to start working on version 4, but this project did help me learn a lot about js and the DOM"
+        features="Contact Modal, Dark mode, MouseEvent Listeners, Modern Design, Responsive Design"
         image={mockeportfolio}
       />
       <Portfoliocard
-        text="My first ever react project, that i commissioned for a friend to help promote his youtube channel. Noticeable features include a video carousel, fixed navbar, youtube api usage, inbuilt video player, onscroll animations, searchbar function"
+        text="Having messed around with Javascript, i started my attempt at calling APIs, and this was the result of it, and it turned it pretty well for a first ever API call, even if it a simple Movie API."
+        features="Api Usage, Human Centered Design, Error Handling, search and filter function, dark mode, loading state"
         image={dbmi}
       />
       <Portfoliocard
-        text="My attempt at an e-commerce store using react, this was probably my hardest ever attempted project, because of how unfamiliar i was with react, and i had to use a ton of tutorials to get through it all. Noticeable features include; mock api data, dynamic card page, filter function"
+        text="This was a mini side project i started when i got bored of making websites, so i decided to take a break by designing a game instead. This actually was quite helpful in js logic, it taught me a lot about recursion, timeout functions and dynamically updating DOM elements"
+        features="Dynamic remaining boxes and lives counter, timer, intuitive game logic, Game Over screen with statistics."
         image={memorygame}
       />
     </div>
