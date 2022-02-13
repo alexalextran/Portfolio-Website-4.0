@@ -328,13 +328,14 @@ CAROUSEL
   left: 50%;
   transform: translate(-50%, 0);
 
-
+display: none;
   visibility: none;
   position: absolute;
   transition: all 300ms;
 }
 
 .carousel__item.carousel__item--selected {
+  display: block;
   transition: all 500ms;
   margin-bottom: 30px;
   visibility: visible;
