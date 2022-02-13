@@ -345,10 +345,7 @@ CAROUSEL
  
 }
 
-.unselect{
-  color: gray;
-  pointer-events: none;
-}
+
 
 .portfolio__cardtext{
   position: absolute;
@@ -389,7 +386,10 @@ CAROUSEL
   color: rgb(0,180,216);
 }
 
-
+.carousel__button.unselect{
+  color: gray;
+  pointer-events: none;
+}
 .portfolio__cardimage{
   width: 1000px;
 }

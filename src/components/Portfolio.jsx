@@ -13,32 +13,28 @@ const Portfolio = () => {
       const items = carousel.querySelectorAll(".carousel__item");
       const buttons = carousel.querySelectorAll(".carousel__button");
       items[itemnumber].classList.add("carousel__item--selected");
-      console.log(itemnumber)
+
           items.forEach((item) =>
             item.classList.remove("carousel__item--selected")
           );
 
           buttons.forEach((bruh) =>
-          (bruh.style.pointerEvents = "all", bruh.style.color = "rgb(14,182,216)")
-          );
+          (bruh.classList.remove("unselect")))
 
          
           
           if(direction == "forward"){
             itemnumber++
           }
-          
           if(direction == "backward"){
             itemnumber--
           }
 
        if(itemnumber == 0){
-            buttons[0].style.pointerEvents = "none";
-            buttons[0].style.color = "gray";
+            buttons[0].classList.add("unselect");
           }
           if(itemnumber == items.length - 1 ){
-            buttons[1].style.pointerEvents = "none";
-            buttons[1].style.color = "gray";
+            buttons[1].classList.add("unselect");
           }
          
           items[itemnumber].classList.add("carousel__item--selected");
