@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Cssportfoliocards from "../ui/CssPortfolioCards";
 import Jsportfoliocards from "../ui/JsPortfolioCards";
 import Reactportfoliocards from "../ui/ReactPortfolioCards";
 
@@ -66,6 +67,10 @@ const Portfolio = () => {
       
       case("js"):
       return <Jsportfoliocards />
+      break;
+
+      case("html&css"):
+      return <Cssportfoliocards />
       break;
       
       default:

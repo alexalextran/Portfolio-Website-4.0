@@ -361,6 +361,7 @@ CAROUSEL
   align-items: center;
   padding: 60px;
   font-size: 24px;
+  flex-direction: column;
 }
 
 .carousel__item--selected:hover > .portfolio__cardtext {

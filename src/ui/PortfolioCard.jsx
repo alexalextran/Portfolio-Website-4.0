@@ -8,7 +8,8 @@ const Portfoliocard = (card) => {
             </img>
 
             <div className='portfolio__cardtext'>
-                {card.text}
+                <p>{card.text}</p>
+                <h3>Key Features Include {card.features}</h3>
             </div>
         </div>
     );
