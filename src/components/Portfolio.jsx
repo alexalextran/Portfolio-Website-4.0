@@ -4,50 +4,53 @@ import Reactportfoliocards from "../ui/ReactPortfolioCards";
 
 const Portfolio = () => {
   const [language, setlanguage] = useState("react");
+  var itemnumber = 0
 
-  function carousel() {
+  function carousel(direction) {
+    
+    
     document.querySelectorAll(".carousel").forEach((carousel) => {
       const items = carousel.querySelectorAll(".carousel__item");
       const buttons = carousel.querySelectorAll(".carousel__button");
-        buttons.forEach(
-          (button) => (button.style.pointerEvents = "all", button.style.color = "rgb(0,180,216)"));
-      var k = 1;
-
-      buttons.forEach((button, i) => {
-        button.addEventListener("click", () => {
-          // un-select all the items
-
+      items[itemnumber].classList.add("carousel__item--selected");
+      console.log(itemnumber)
           items.forEach((item) =>
             item.classList.remove("carousel__item--selected")
           );
-          
+
+          buttons.forEach((bruh) =>
+          (bruh.style.pointerEvents = "all", bruh.style.color = "rgb(14,182,216)")
+          );
+
          
-          if (i == 0) {
-            k--;
-            if (k == 0) {
-              buttons[i].style.pointerEvents = "none";
-              buttons[i].style.color = "gray";
-            } else {
-              buttons[1].style.color = "rgb(0,180,216)";
-            }
-          } else {
-            k++;
-            if (k == items.length -1) {
-              buttons[i].style.pointerEvents = "none";
-              buttons[i].style.color = "gray";
-            } else {
-              buttons[0].style.color = "rgb(0,180,216)";
-            }
+          
+          if(direction == "forward"){
+            itemnumber++
+          }
+          
+          if(direction == "backward"){
+            itemnumber--
           }
 
-          items[k].classList.add("carousel__item--selected");
+       if(itemnumber == 0){
+            buttons[0].style.pointerEvents = "none";
+            buttons[0].style.color = "gray";
+          }
+          if(itemnumber == items.length - 1 ){
+            buttons[1].style.pointerEvents = "none";
+            buttons[1].style.color = "gray";
+          }
+         
+          items[itemnumber].classList.add("carousel__item--selected");
+         
+       
         });
-      });
-
-      // Select the first item on page load
-      items[k].classList.add("carousel__item--selected");
-    });
-  }
+      };
+      
+     
+     
+   
+  
 
   useEffect(() => {
     carousel();
@@ -100,9 +103,9 @@ const Portfolio = () => {
         </div>
 
         <div className="carousel__nav">
-          <span className="carousel__button clickable"> &lt;</span>
+          <span className="carousel__button clickable" onClick={() => carousel("backward")}> &lt;</span>
 
-          <span className="carousel__button clickable">/&gt;</span>
+          <span className="carousel__button clickable" onClick={() =>carousel("forward")} >/&gt;</span>
           <p>(Click the icons to switch between videos)</p>
         </div>
       </div>
