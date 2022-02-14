@@ -15,9 +15,10 @@ const Portfolio = () => {
       const items = carousel.querySelectorAll(".carousel__item");
       const buttons = carousel.querySelectorAll(".carousel__button");
       items[itemnumber].classList.add("carousel__item--selected");
+     
 
           items.forEach((item) =>
-            item.classList.remove("carousel__item--selected")
+            (item.classList.remove("carousel__item--selected"), item.style.animation = "")
           );
 
           buttons.forEach((bruh) =>
@@ -27,9 +28,11 @@ const Portfolio = () => {
           
           if(direction == "forward"){
             itemnumber++
+            items[itemnumber].style.animation = "left 800ms"
           }
           if(direction == "backward"){
             itemnumber--
+            items[itemnumber].style.animation = "right 800ms"
           }
 
        if(itemnumber == 0){
