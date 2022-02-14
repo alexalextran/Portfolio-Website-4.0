@@ -1,10 +1,13 @@
 import React from 'react';
 import Nav from '../ui/Nav';
+import homesvg from '../assets/landingsvg.svg'
 
 const Landing = () => {
     return (
         <section className='landing'>
             <Nav />
+
+            <img className="homesvg"src={homesvg}></img>
             <div className='landing__text'>
             <h3 className='landing__text--hi'>Hi Im </h3>
                 <h1 className='landing__text--name typing'>Alex Tran</h1>

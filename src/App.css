@@ -93,13 +93,21 @@ nav {
 .landing {
   background: linear-gradient(250deg, var(--blue), 50%, rgb(245, 245, 245) 50%);
   height: 100vh;
+ 
+}
+
+.homesvg{
+  position: absolute;
+  top: 290px;
+  right: 15%;
+  width: 500px
 }
 
 .landing__text {
   display: flex;
   flex-direction: column;
 
-  margin-left: 18%;
+  margin-left: 15%;
   margin-top: 10%;
   width: 450px;
 }
