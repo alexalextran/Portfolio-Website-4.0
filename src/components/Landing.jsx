@@ -7,8 +7,10 @@ const Landing = () => {
             <Nav />
             <div className='landing__text'>
             <h3 className='landing__text--hi'>Hi Im </h3>
-                <h1 className='landing__text--name'>Alex Tran</h1>
-                <p className='landing__text--title'>Future Front End Developer</p>
+                <h1 className='landing__text--name typing'>Alex Tran</h1>
+         
+                <div  className='landing__text--title'><span>WEB DESIGNER</span></div>
+            
                 <p>Im aspiring to become a react developer blah blah blah more text heeheheheheh</p>
 
                 <div className='socials'>

@@ -24,6 +24,47 @@ html {
   );
 }
 
+/* 
+
+ANIMATIONS
+
+
+*/
+
+.typing {
+  position: relative;
+  width: fit-content;
+}
+.typing::after {
+  font-weight: bolder;
+  content: "|";
+  position: absolute;
+  right: 0;
+
+  color: rgb(0, 0, 0);
+  background: rgb(245,245,245);
+  animation: typing 2s steps(12) forwards, caret 1s infinite;
+}
+
+@keyframes typing {
+  0%{
+    width: 290px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
+
+
+
 nav {
   width: 100%;
   display: flex;
@@ -317,6 +358,11 @@ CAROUSEL
   position: absolute;
   transition: all 300ms;
   z-index: -100;
+  overflow: hidden;
+}
+
+.portfolio__cardimage{
+  transition: all 500ms;
 }
 
 .carousel__item.carousel__item--selected {
@@ -368,10 +414,19 @@ CAROUSEL
   color: var(--blue);
 }
 
+.portfolio__cardtext--button{
+  width: fit-content;
+  margin-top: 20px;
+  align-self: flex-end;
+}
+
 .carousel__item--selected:hover > .portfolio__cardtext {
   background-color: rgb(245, 245, 245, 0.85);
   opacity: 1;
   padding-top: 50px;
+}
+.carousel__item--selected:hover > .portfolio__cardimage {
+  transform: scale(1.05);
 }
 
 .carousel__nav {
