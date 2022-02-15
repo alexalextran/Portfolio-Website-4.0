@@ -7,9 +7,11 @@ import Reactportfoliocards from "../ui/ReactPortfolioCards";
 const Portfolio = () => {
   const [language, setlanguage] = useState("react");
   var itemnumber = 0
+  
 
   function carousel(direction) {
-    
+ 
+   
     
     document.querySelectorAll(".carousel").forEach((carousel) => {
       const items = carousel.querySelectorAll(".carousel__item");
@@ -45,8 +47,8 @@ const Portfolio = () => {
           items[itemnumber].classList.add("carousel__item--selected");
          
        
-        });
-      };
+        })
+  }
       
      
      
@@ -59,7 +61,14 @@ const Portfolio = () => {
   }, [language]);
 
   function getporftoliocard(code) {
-    setlanguage(code);
+
+    (document.querySelectorAll(".portfolio__nav--button").forEach((navbutton) => {
+      (navbutton.style.animation= "")
+    }))
+
+    document.getElementById(code).style.animation ="selected 1.2s infinite alternate 500ms"
+
+    setlanguage(code)
 
   }
 
@@ -95,13 +104,13 @@ const Portfolio = () => {
             <h1 className="YTvideos__header--title gold">My Projects</h1>
             <p>here is a compilation of all my projects for each language</p>
           </div>
-          <div className="porfolio__header--nav">
-            <button onClick={() => getporftoliocard("html&css")}>
+          <div className="portfolio__nav">
+            <button className="portfolio__nav--button clickable" id="html&css" onClick={() => getporftoliocard("html&css")}>
               HTML&CSS
             </button>
-            <button onClick={() => getporftoliocard("js")}>JS only</button>
-            <button onClick={() => getporftoliocard("react")}>React</button>
-            <button onClick={() => getporftoliocard("java")}>Java</button>
+            <button className="portfolio__nav--button clickable" id="js"  onClick={() => getporftoliocard("js")}>JS only</button>
+            <button className="portfolio__nav--button clickable" id="react" onClick={() => getporftoliocard("react")}>React</button>
+            <button className="portfolio__nav--button clickable" id="java" onClick={() => getporftoliocard("java")}>Java</button>
           
           </div>
 

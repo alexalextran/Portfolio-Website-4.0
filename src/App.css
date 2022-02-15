@@ -31,8 +31,13 @@ section{
 html {
   background: url('/src/assets/statsbackground.jpg') fixed;
   background-position-y: 1000px;
- 
- 
+}
+
+.clickable:hover {
+  transform: translateY(-10px);
+}
+.clickable:active {
+  transform: translateY(10px);
 }
 
 /* 
@@ -82,12 +87,15 @@ nav {
   display: flex;
   list-style: none;
   font-weight: 500;
-  padding: 50px 10%;
+  padding: 50px 5%;
 }
 
 .nav__links--a {
-  padding: 0px 30px;
+  padding: 0px 20px;
+  margin: 0px 14px;
   color: white;
+  background-color: rgb(3,4,89);
+  border-radius: 25px;
 }
 
 .landing {
@@ -356,13 +364,45 @@ CAROUSEL
 }
 
 .carousel__item--wrapper {
-  height: 700px;
+  height: 800px;
   padding-top: 50px;
   background: color rgb(246, 246, 246);
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
+
+}
+
+
+.portfolio__nav--button{
+  margin: 0px 20px;
+  border: none;
+  font-size: 26px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+@keyframes selected {
+  0%{
+ color: black;
+  }
+  100%{
+    color: var(--blue);
+    border-top: 2px solid black;
+ border-bottom: 2px solid black;
+  }
+}
+
+.portfolio__nav--button:hover{
+ color: var(--blue);
+ border-top: 2px solid black;
+ border-bottom: 2px solid black;
+  
 }
 
 .carousel__item {
@@ -388,8 +428,9 @@ CAROUSEL
   pointer-events: all;
   z-index: 100;
   transition: all 600ms;
+  box-shadow:  13px 13px 26px #5a5a5a,
+             -13px -13px 26px #ffffff;
 }
-
 @keyframes left {
   0% {
     transform: translate(-40%, 0);
@@ -467,6 +508,89 @@ CAROUSEL
 .portfolio__cardimage {
   width: 1000px;
 }
+
+
+ 
+ button.learn-more {
+  width: 300px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  color: #282936;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  font-size: 12px;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
 
 /* Languages 
 
