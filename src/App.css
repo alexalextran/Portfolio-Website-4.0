@@ -392,9 +392,9 @@ CAROUSEL
  color: black;
   }
   100%{
-    color: var(--blue);
-    border-top: 2px solid black;
- border-bottom: 2px solid black;
+    color: #FF4B27;
+    border-top: 2px solid rgb(255, 255, 255);
+ border-bottom: 2px solid rgb(255, 255, 255);
   }
 }
 
@@ -403,6 +403,10 @@ CAROUSEL
  border-top: 2px solid black;
  border-bottom: 2px solid black;
   
+}
+
+.carousel__title{
+  font-family: "Montserrat", sans-serif;
 }
 
 .carousel__item {
@@ -619,6 +623,7 @@ CAROUSEL
 .imagecomparison{
   height: 900px;
   padding-top: 60px;
+  position: relative;
 }
 
 .statistics__text {
@@ -673,4 +678,12 @@ CAROUSEL
   background-color: #2196f3;
   opacity: 0.7;
   border-radius: 50%;
+}
+
+.imagecomparison__contact{
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 100px;
+  
 }

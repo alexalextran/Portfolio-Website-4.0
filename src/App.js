@@ -7,6 +7,7 @@ import Journey from './components/Journey';
 import Portfolio from './components/Portfolio';
 import Statistics from './components/Statistics';
 import Imagecomparison from './components/ImageComparison';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
    <Portfolio />
    <Statistics />
    <Imagecomparison />
+   <Footer />
    </>
   );
 }

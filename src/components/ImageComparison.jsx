@@ -104,6 +104,12 @@ const Imagecomparison = () => {
             <img src={comparisonold} width="1000" height="500"></img>
             </div>
             </div>
+
+              <div className='imagecomparison__contact'>
+                <p>Thank you for exploring my portfolio, as always do not hesitate to contact me if you have any enquiries!</p>
+                <button>Click here to contact me or alteratively click the mail icon on the side!</button>
+              </div>
+            
         </section>
     );
 }

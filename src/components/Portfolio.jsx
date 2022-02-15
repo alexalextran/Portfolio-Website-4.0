@@ -100,8 +100,8 @@ const Portfolio = () => {
     <section className="projects">
       <div className="carousel">
         <div className="carousel__item--wrapper">
-          <div className="YTvideos__header--text">
-            <h1 className="YTvideos__header--title gold">My Projects</h1>
+          <div className="">
+            <h1 className="carousel__title">My Projects</h1>
             <p>here is a compilation of all my projects for each language</p>
           </div>
           <div className="portfolio__nav">
