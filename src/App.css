@@ -99,6 +99,7 @@ nav {
 }
 
 .landing {
+  position: relative;
   background: linear-gradient(250deg, var(--blue), 50%, rgb(245, 245, 245) 50%);
   height: 100vh;
  
@@ -686,4 +687,86 @@ CAROUSEL
   transform: translatex(-50%);
   bottom: 100px;
   
+}
+
+footer{
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.footer__links{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.footer__links > li{
+  margin: 0px 20px;
+  margin-top: 20px;
+ list-style: none;
+}
+
+/*
+MAIL MODAL
+*/
+
+.mail__icon{
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  right: 40px;
+  bottom: 40px;
+  width: 100px;
+  fill: white;
+  background-color: rgb(24, 24, 24);
+ height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.mail__icon > svg{
+  width: 50px;
+}
+
+.modal{
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__left, .modal__right{
+color: white;
+width: 450px;
+height: 550px;
+background-color: rgb(24, 24, 24);
+}
+
+.modal__right{
+display: flex;
+flex-direction: column;
+}
+
+form{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+form > input,textarea{
+  color: white;
+  margin-bottom: 30px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid var(--blue);
+}
+
+input:focus, textarea:focus{
+outline: none;
+border-bottom: 2px solid rgb(3,4,89);
 }
