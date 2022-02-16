@@ -113,8 +113,9 @@ nav {
   position: absolute;
   top: 290px;
   right: 15%;
-  width: 500px
-}
+  width: 500px !important;
+  height: auto !important;
+} 
 
 .landing__text {
   display: flex;
