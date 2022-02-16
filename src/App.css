@@ -5,6 +5,10 @@
   --blue: rgb(0, 180, 216);
 }
 
+.blue{
+  color: var(--blue);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -737,18 +741,47 @@ MAIL MODAL
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 20px 80px 0px rgb(0 0 0 / 55%);
 }
 
 .modal__left, .modal__right{
 color: white;
 width: 450px;
 height: 550px;
-background-color: rgb(24, 24, 24);
+background-color: rgb(36,36,36);
 }
 
 .modal__right{
 display: flex;
 flex-direction: column;
+}
+
+.modal__left{
+  color: black;
+  background-color: white;
+}
+
+.modal__left > div:first-child{
+  padding: 50px;
+}
+
+.modal__left > div > h5{
+  margin-bottom: 40px;
+}
+
+
+.modal__left--techicons{
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+
+}
+
+
+.modal__left--techicons > svg, img{
+  height: 60px;
+   width: 60px;
+   transition: all 500ms;
 }
 
 form{
@@ -757,16 +790,34 @@ form{
   flex-direction: column;
 }
 
-form > input,textarea{
+input,textarea{
   color: white;
   margin-bottom: 30px;
   background-color: transparent;
   padding: 10px;
   border: none;
   border-bottom: 2px solid var(--blue);
+  transition: all 500ms;
 }
 
 input:focus, textarea:focus{
 outline: none;
-border-bottom: 2px solid rgb(3,4,89);
+border-bottom: 2px solid #FF4B27;
+}
+
+.modal__right--button.learn-more{
+  width: 100%;
+}
+
+.modal__right > h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.modal__right--button{
+  color: white !important;
+}
+
+.modal__right--button.circle{
+  background-color: var(--blue) !important;
 }
