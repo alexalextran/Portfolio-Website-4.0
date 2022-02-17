@@ -95,7 +95,7 @@ const Imagecomparison = () => {
         <section className='imagecomparison'>
         
             <div className="img-comp-container">
-            <h2>My Progress</h2>
+            <h1>My Progress</h1>
             <p>Looking Back, I've come a long way ever since starting front end, from creating my first proper eportfolio to clean modern react websites that your seeing right now</p>
             <div className="img-comp-img">
             <img src={comparisonnew} width="1000" height="500"></img>
@@ -106,8 +106,8 @@ const Imagecomparison = () => {
             </div>
 
               <div className='imagecomparison__contact'>
-                <p>Thank you for exploring my portfolio, as always do not hesitate to contact me if you have any enquiries!</p>
-                <button>Click here to contact me or alteratively click the mail icon on the side!</button>
+                <p>Thank You For Taking The Time To Explore My E-Porfolio And As Always, Don't Hesitate to Message Me If You Have Any Enquiries!</p>
+                <p>click the mail icon on the side to send me a message!</p>
               </div>
             
         </section>

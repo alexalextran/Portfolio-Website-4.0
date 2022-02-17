@@ -231,7 +231,7 @@ Skills
   margin-bottom: 30px;
   margin-top: 50px;
   font-family: "Montserrat", sans-serif;
-  font-size: 52px;
+  font-size: 44px;
 }
 
 .skills__title--sub {
@@ -380,7 +380,7 @@ CAROUSEL
 }
 
 .carousel__item--wrapper {
-  height: 800px;
+  height: 840px;
   padding-top: 50px;
   background: color rgb(246, 246, 246);
   display: flex;
@@ -425,6 +425,7 @@ CAROUSEL
 
 .carousel__title {
   font-family: "Montserrat", sans-serif;
+  font-size: 44px;
 }
 
 .carousel__item {
@@ -448,7 +449,7 @@ CAROUSEL
   z-index: 1;
   opacity: 1;
   pointer-events: all;
-  z-index: 100;
+  z-index: 99;
   transition: all 600ms;
   box-shadow: 13px 13px 26px #5a5a5a, -13px -13px 26px #ffffff;
 }
@@ -639,8 +640,9 @@ button:hover .button-text {
 
 .imagecomparison {
   height: 900px;
-  padding-top: 60px;
+  padding-top: 50px;
   position: relative;
+  text-align: center;
 }
 
 .statistics__text {
@@ -656,7 +658,6 @@ button:hover .button-text {
   color: var(--blue);
   font-weight: 600;
   font-size: 30px;
-
   font-family: "Montserrat", sans-serif;
 }
 
@@ -665,10 +666,18 @@ button:hover .button-text {
   width: 1000px;
   transform: translatex(
     -50%
-  ); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
+  ); 
   position: relative;
   height: 500px; /*should be the same height as the images*/
+
+}
+.img-comp-container > p {
+  margin-bottom: 30px;
+}
+
+.img-comp-container > h1 {
+  font-size: 44px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .img-comp-img {
@@ -700,6 +709,10 @@ button:hover .button-text {
   left: 50%;
   transform: translatex(-50%);
   bottom: 100px;
+}
+
+.imagecomparison__contact > p:nth-child(2){
+  margin-top: 10px;
 }
 
 footer {
