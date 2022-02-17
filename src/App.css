@@ -138,12 +138,14 @@ nav > img {
 }
 
 .landing__text {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  transition: all 800ms;
-  margin-left: 15%;
-  margin-top: 10%;
+ transition: opacity 800ms;
+  left: 15%;
+  top: 240px;
   width: 450px;
+
 }
 
 .landing__text--hi {
