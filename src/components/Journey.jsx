@@ -2,7 +2,7 @@ import React from 'react';
 
 const Journey = () => {
     return (
-        <section className='journey'>
+        <section id='journey'>
         <h1 className='journey__title'>My Journey</h1>
         <div className="timeline">
   <div className="container left">

@@ -5,18 +5,18 @@ const Nav = (props) => {
         <nav>
         <img src={props.logo}/>
             <ul className='nav__links'>
-                <li className='nav__links--a'>
+                <a href='#aboutme'><li>
                     About me
-                </li>
-                <li className='nav__links--a'>
+                </li></a>
+                <a href='#skills'><li>
                     Skills
-                </li>
-                <li className='nav__links--a'>
+                </li></a>
+                <a href='#projects'><li>
                     Projects
-                </li>
-                <li className='nav__links--a'>
+                </li></a>
+                <a href='#journey'> <li>
                     My Journey
-                </li>
+                </li></a>
             </ul>
         </nav>
     );

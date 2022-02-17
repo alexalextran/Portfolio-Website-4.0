@@ -13,6 +13,11 @@
   opacity: 0;
 }
 
+a:active, a{
+color: inherit;
+text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -107,13 +112,14 @@ nav > img {
   align-items: center;
 }
 
-.nav__links--a {
+.nav__links > a {
   height: fit-content;
   padding: 0px 20px;
   margin: 0px 14px;
   color: white;
   background-color: rgb(3, 4, 89);
   border-radius: 25px;
+  cursor: pointer;
 }
 
 #landing {
@@ -178,16 +184,12 @@ ABOUTME
 
 */
 
-.aboutme {
+#aboutme {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 800px;
-}
-
-.aboutme > * {
-  animation: fade 1s;
 }
 
 .aboutme__info {
@@ -232,7 +234,7 @@ ABOUTME
 Skills
 
 */
-.skills {
+#skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +276,7 @@ Skills
   margin-bottom: 50px;
 }
 
-.journey {
+#journey {
   text-align: center;
 }
 
@@ -382,7 +384,7 @@ CAROUSEL
 
 */
 
-.projects {
+#projects {
   height: fit-content;
 }
 
@@ -739,7 +741,7 @@ footer > ul {
   justify-content: center;
 }
 
-footer > ul > li {
+footer > ul > a {
   margin: 0px 20px;
   margin-top: 20px;
   list-style: none; 
@@ -747,7 +749,7 @@ footer > ul > li {
   cursor: pointer;
 }
 
-footer > ul > li:after{
+footer > ul > a:after{
   content: "";
   position: absolute;
   bottom: -3px;
@@ -758,7 +760,7 @@ footer > ul > li:after{
   transition: all 300ms ease;
 }
 
-footer > ul > li:hover:after{
+footer > ul > a:hover:after{
   width: 100%;
 }
 

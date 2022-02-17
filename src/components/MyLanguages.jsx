@@ -7,7 +7,7 @@ import python from "../assets/python.png";
 
 const Mylanguages = () => {
   return (
-    <section className="skills">
+    <section id="skills">
       <h1 className="skills__title">Skills</h1>
       <h2 className="skills__title--sub">What I Use</h2>
       <div className="skills__using">

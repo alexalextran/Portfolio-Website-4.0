@@ -97,7 +97,7 @@ const Portfolio = () => {
   
 
   return (
-    <section className="projects">
+    <section id="projects">
       <div className="carousel">
         <div className="carousel__item--wrapper">
           <div>
