@@ -802,7 +802,8 @@ MAIL MODAL
   border-radius: 20px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 500ms;
+  transition: all 500ms;
+  z-index: -1 !important;
 }
 
 .modal > svg {
@@ -824,6 +825,7 @@ MAIL MODAL
 .modal__open .modal {
   opacity: 1;
   visibility: visible;
+  z-index: 1;
 }
 
 .modal__open .modal__left,
@@ -854,6 +856,7 @@ MAIL MODAL
   transition: all 500ms;
   opacity: 0;
   visibility: hidden;
+  
 }
 
 .modal__right {
