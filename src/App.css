@@ -140,7 +140,7 @@ nav > img {
 .landing__text {
   display: flex;
   flex-direction: column;
-  transition: opacity 800ms;
+  transition: all 800ms;
   margin-left: 15%;
   margin-top: 10%;
   width: 450px;
