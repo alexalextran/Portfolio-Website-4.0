@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Landing from './components/Landing';
 import Aboutme from './components/AboutMe';
@@ -8,19 +8,20 @@ import Portfolio from './components/Portfolio';
 import Statistics from './components/Statistics';
 import Imagecomparison from './components/ImageComparison';
 import Footer from './components/Footer';
+import logo from '../src/assets/logoalextran.png'
 
 
 function App() {
   return (
     <>
-   <Landing />
+   <Landing logo={logo}/>
    <Aboutme />
    <Mylanguages />
    <Portfolio />
    <Journey />
    <Statistics />
    <Imagecomparison />
-   <Footer />
+   <Footer logo={logo}/>
    </>
   );
 }

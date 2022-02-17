@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../assets/logoalextran.png'
-const Nav = () => {
+
+const Nav = (props) => {
     return (
         <nav>
-        <img src={logo}/>
+        <img src={props.logo}/>
             <ul className='nav__links'>
                 <li className='nav__links--a'>
                     About me

@@ -4,7 +4,7 @@ import homesvg from '../assets/landingsvg.svg'
 import ContactModal from './Contact__Modal';
 import { Link } from "react-router-dom";
 
-const Landing = () => {
+const Landing = (props) => {
     const [showmodal, setshowmodal] = useState(false);
 
 
@@ -24,7 +24,7 @@ const Landing = () => {
     return (
         
         <section id='landing'>
-            <Nav />
+            <Nav logo={props.logo}/>
 
             <img className="homesvg"src={homesvg}></img>
             <div className='landing__text'>

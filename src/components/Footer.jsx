@@ -1,14 +1,18 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <footer>
-            Designed And Created By Alex Tran
+            <p>Designed And Created By Alex Tran</p>
+
+            <img src={props.logo}>
+
+            </img>
             <ul>
-                <li> 
+                <li > 
                     LinkedIn
                 </li>
-                <li>
+                <li> 
                      Github
                 </li>
                 <li>
