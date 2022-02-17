@@ -132,8 +132,8 @@ nav > img {
   position: absolute;
   top: 240px;
   right: 15%;
-  width: 500px !important;
-  height: auto !important;
+  width: 500px ;
+  height: auto ;
   transition: all 800ms;
 }
 
@@ -687,6 +687,12 @@ button:hover .button-text {
   height: 500px; /*should be the same height as the images*/
 
 }
+
+.img-comp-img > img{
+  width: 1000px;
+  height: 500px;
+
+}
 .img-comp-container > p {
   margin-bottom: 30px;
 }
@@ -950,4 +956,132 @@ textarea:focus {
 .modal__open .homesvg {
   opacity: 0;
   visibility: hidden;
+}
+
+@media(max-width: 1024px){
+.nav__links > a {
+  font-size: 12px;
+  margin: 0px 6px ; 
+}
+
+.homesvg{
+  width: 300px;
+  right: 10%;
+}
+
+.landing__text{
+  width: 200px;
+  font-size: 12px;
+  left: 10%;
+}
+
+.socials{
+  margin-top: 20px;
+}
+
+.landing__text > h1{
+  font-size: 30px;
+}
+
+#aboutme{
+  height: auto;
+  padding: 50px 0px;
+}
+
+#aboutme > div:first-child > img{
+  height: 300px;
+  width: auto;
+  margin-right: 40px;
+}
+
+.aboutme__info--wrapper{
+  padding: 10px;
+  font-size: 12px;
+}
+
+.aboutme__info--wrapper > div > h1{
+font-size: 30px;
+}
+.aboutme__info--wrapper > div > ul{
+  margin-top: 10px;
+
+}
+
+.aboutme__info--wrapper > div >ul>  li{
+  margin-bottom: 10px;
+}
+
+.skills__title--sub{
+  margin-bottom: 40px;
+}
+
+.skills__using{
+  grid-gap: 30px;
+ grid-auto-columns: auto;
+  grid-template-columns: repeat(3, 120px)
+}
+
+.carousel__item--wrapper{
+  height: 600px;
+}
+.carousel__item{
+  margin-top: 30px;
+}
+
+
+.portfolio__cardimage{
+  width: 600px;
+}
+
+.portfolio__cardtext--features, .portfolio__cardtext--description{
+  font-size: 12px
+}
+
+.portfolio__cardtext{
+  padding: 0px 40px ;
+}
+
+.button-text{
+  font-size: 12px;
+}
+  button.learn-more, button.learn-more .circle{
+  height: 2rem;
+}
+
+.stat{
+  text-align: center;
+}
+
+.imagecomparison{
+height: 790px;
+}
+
+.img-comp-img > img, .img-comp-container{
+  width: 600px;
+  height: 300px;
+
+}
+
+footer > img{
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.modal{
+font-size: 12px;
+}
+
+.modal__left, .modal__right{
+  width: 350px;
+  height: 550px;
+}
+.modal__left > div:first-child, form{
+  padding: 20px;
+}
+
+textarea{
+height: 100px;
+}
+
+
 }

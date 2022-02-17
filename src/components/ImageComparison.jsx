@@ -98,10 +98,10 @@ const Imagecomparison = () => {
             <h1>My Progress</h1>
             <p>Looking Back, I've come a long way ever since starting front end, from creating my first proper eportfolio to clean modern react websites that your seeing right now</p>
             <div className="img-comp-img">
-            <img src={comparisonnew} width="1000" height="500"></img>
+            <img src={comparisonnew}></img>
              </div>
             <div className="img-comp-img img-comp-overlay">
-            <img src={comparisonold} width="1000" height="500"></img>
+            <img src={comparisonold}></img>
             </div>
             </div>
 
