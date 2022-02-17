@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/react_e_portfolio/static/css/main.85b0e12f.css",
+    "main.js": "/react_e_portfolio/static/js/main.97e302ba.js",
+    "static/js/787.d59d2387.chunk.js": "/react_e_portfolio/static/js/787.d59d2387.chunk.js",
+    "static/media/PROFILEPIC.jpg": "/react_e_portfolio/static/media/PROFILEPIC.e7ea2aef5647adde3c65.jpg",
+    "static/media/dbmi.jpg": "/react_e_portfolio/static/media/dbmi.dc331d304c3871d6a8d4.jpg",
+    "static/media/eportv2.jpg": "/react_e_portfolio/static/media/eportv2.2e24ec83397119ac1eda.jpg",
+    "static/media/react-ecommerce.jpg": "/react_e_portfolio/static/media/react-ecommerce.5fd4f9336310de767cde.jpg",
+    "static/media/phil.jpg": "/react_e_portfolio/static/media/phil.e2433c7aabce40798094.jpg",
+    "static/media/eportv3.jpg": "/react_e_portfolio/static/media/eportv3.f3ae93333f5f29999432.jpg",
+    "static/media/mysql.png": "/react_e_portfolio/static/media/mysql.ef238c26ec64482ce26d.png",
+    "static/media/a-academy.jpg": "/react_e_portfolio/static/media/a-academy.fa813d066d05380f328b.jpg",
+    "static/media/statsbackground.jpg": "/react_e_portfolio/static/media/statsbackground.f62026321d5dbe64d387.jpg",
+    "static/media/minesweeper.jpg": "/react_e_portfolio/static/media/minesweeper.42749ec53c35c64578dd.jpg",
+    "static/media/java.png": "/react_e_portfolio/static/media/java.860b21889bd8a30b86aa.png",
+    "static/media/cafejava.jpg": "/react_e_portfolio/static/media/cafejava.b4a3c14a2cc39ca11865.jpg",
+    "static/media/memorygame.jpg": "/react_e_portfolio/static/media/memorygame.b2b223b34c7150d84873.jpg",
+    "static/media/reakt.jpg": "/react_e_portfolio/static/media/reakt.06979963434d88df48f0.jpg",
+    "static/media/mockeporftolio.jpg": "/react_e_portfolio/static/media/mockeporftolio.0a94807af455dd496c47.jpg",
+    "static/media/eportv1.jpg": "/react_e_portfolio/static/media/eportv1.61d69383d0f94fbb7eae.jpg",
+    "static/media/comparisonphoto.jpg": "/react_e_portfolio/static/media/comparisonphoto.f6943626f79a2425970b.jpg",
+    "static/media/javacalc.jpg": "/react_e_portfolio/static/media/javacalc.fb3d8814b5490a1829db.jpg",
+    "static/media/reactjpg.png": "/react_e_portfolio/static/media/reactjpg.20adfb35ae6a6e5817bf.png",
+    "static/media/landingsvg.svg": "/react_e_portfolio/static/media/landingsvg.ad02aea0c1be5034fa0d2e119c3b8215.svg",
+    "static/media/figma.svg": "/react_e_portfolio/static/media/figma.272540cc0fbc6daff2b7c6ac778e39e9.svg",
+    "index.html": "/react_e_portfolio/index.html",
+    "main.85b0e12f.css.map": "/react_e_portfolio/static/css/main.85b0e12f.css.map",
+    "main.97e302ba.js.map": "/react_e_portfolio/static/js/main.97e302ba.js.map",
+    "787.d59d2387.chunk.js.map": "/react_e_portfolio/static/js/787.d59d2387.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85b0e12f.css",
+    "static/js/main.97e302ba.js"
+  ]
+}
