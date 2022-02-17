@@ -9,13 +9,13 @@ const Nav = (props) => {
                     About me
                 </li>
                 <li className='nav__links--a'>
-                    Portfolio
+                    Skills
                 </li>
                 <li className='nav__links--a'>
-                    Languages and skills
+                    Projects
                 </li>
                 <li className='nav__links--a'>
-                    Contact Me
+                    My Journey
                 </li>
             </ul>
         </nav>

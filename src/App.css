@@ -9,6 +9,10 @@
   color: var(--blue);
 }
 
+.hidden{
+  opacity: 0;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -161,6 +165,10 @@ nav > img {
   margin: 10px 10px;
   padding: 10px;
   background-color: rgb(204, 199, 199);
+  transition: all 500ms;
+}
+
+.social__icon:hover{
   box-shadow: 0px 12px 12px -4px rgba(0, 0, 0, 0.57);
 }
 
@@ -176,6 +184,10 @@ ABOUTME
   align-items: center;
   width: 100%;
   height: 800px;
+}
+
+.aboutme > * {
+  animation: fade 1s;
 }
 
 .aboutme__info {
@@ -822,9 +834,11 @@ MAIL MODAL
 
 @keyframes fade {
   0% {
+    background-image: white;
     opacity: 0;
   }
   100% {
+   
     opacity: 1;
   }
 }
