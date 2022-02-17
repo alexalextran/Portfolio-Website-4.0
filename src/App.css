@@ -803,7 +803,7 @@ MAIL MODAL
   visibility: hidden;
   opacity: 0;
   transition: all 500ms;
-  z-index: -1 !important;
+  z-index: -1 ;
 }
 
 .modal > svg {
