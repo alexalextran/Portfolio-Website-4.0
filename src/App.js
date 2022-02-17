@@ -16,8 +16,8 @@ function App() {
    <Landing />
    <Aboutme />
    <Mylanguages />
-   <Journey />
    <Portfolio />
+   <Journey />
    <Statistics />
    <Imagecomparison />
    <Footer />

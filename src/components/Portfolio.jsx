@@ -100,9 +100,9 @@ const Portfolio = () => {
     <section className="projects">
       <div className="carousel">
         <div className="carousel__item--wrapper">
-          <div className="">
+          <div>
             <h1 className="carousel__title">My Projects</h1>
-            <p>here is a compilation of all my projects for each language</p>
+            <p>Here is a compilation of all my projects for each language, feel free to explore by switching between languages</p>
           </div>
           <div className="portfolio__nav">
             <button className="portfolio__nav--button clickable" id="html&css" onClick={() => getporftoliocard("html&css")}>
@@ -124,7 +124,7 @@ const Portfolio = () => {
           <span className="carousel__button clickable" onClick={() => carousel("backward")}> &lt;</span>
 
           <span className="carousel__button clickable" onClick={() =>carousel("forward")} >/&gt;</span>
-          <p>(Click the icons to switch between videos)</p>
+          <p>(Cick the arrows to switch between projects)</p>
         </div>
       </div>
     </section>
