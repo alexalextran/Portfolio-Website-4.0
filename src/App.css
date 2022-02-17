@@ -84,17 +84,30 @@ ANIMATIONS
 nav {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  height: fit-content;
+  
+}
+
+nav > img{
+  height: 80px;
+  transform: scale(2.5);
+  margin-left: 80px;
+  margin-top: 20px;
 }
 
 .nav__links {
   display: flex;
   list-style: none;
   font-weight: 500;
-  padding: 50px 5%;
+  padding: 10px 5%;
+display: flex;
+align-items: center;
 }
 
 .nav__links--a {
+  
+  height: fit-content;
   padding: 0px 20px;
   margin: 0px 14px;
   color: white;
@@ -743,8 +756,36 @@ MAIL MODAL
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 20px 80px 0px rgb(0 0 0 / 55%);
-  animation: fade 800ms;
   border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms;
+  
+}
+
+.modal > svg {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  right: 20px;
+  fill: white;
+  cursor: pointer;
+  transition: all 500ms;
+  transform: translateX(80px);
+}
+
+.modal > svg:hover{
+  transform: rotate(90deg) !important;
+}
+
+.modal__open .modal{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__open .modal__left, .modal__open .modal__right, .modal__open .modal > svg{
+transform: translateX(0);
 }
 
 @keyframes fade {
@@ -762,13 +803,14 @@ color: white;
 width: 450px;
 height: 650px;
 background-color: rgb(36,36,36);
-
+transition: all 500ms;
 }
 
 .modal__right{
 display: flex;
 flex-direction: column;
 border-radius: 0px 20px 20px 0px;
+transform: translateX(80px);
 
 }
 
@@ -776,6 +818,7 @@ border-radius: 0px 20px 20px 0px;
   color: black;
   background-color: white;
   border-radius: 20px 0px 0px 20px;
+  transform: translateX(-80px);
 }
 
 .modal__left > div:first-child{
@@ -795,7 +838,8 @@ margin-top: 30px;
 }
 
 
-.modal__left--techicons > svg, img{
+
+.modal__left--techicons > svg, .modal__left--techicons > img{
   height: 60px;
    width: 60px;
    transition: all 500ms;
@@ -843,3 +887,4 @@ resize: none;
 .modal__right--button.circle{
   background-color: var(--blue) !important;
 }
+
