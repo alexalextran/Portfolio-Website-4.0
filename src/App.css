@@ -1243,7 +1243,7 @@ height: 100px;
   
   .portfolio__cardtext{
     padding: 0px 10px ;
-    margin-bottom: 40px;
+    padding-bottom: 30px;
   }
   
   .button-text{
@@ -1314,6 +1314,7 @@ height: 100px;
   footer > img{
     margin-top: 0;
     padding-top: 10px;
+    width: 30px;
   }
   
   .modal{
