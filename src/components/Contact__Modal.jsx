@@ -1,12 +1,49 @@
 import React from "react";
+import { useRef } from "react/cjs/react.development";
 import reactjpg from "../assets/reactjpg.png";
+import emailjs, { init } from '@emailjs/browser';
+init("user_2jIT9NA6dfZ3X4lKgbInB");
 
 const ContactModal = (props) => {
 
+    const successful = document.getElementById("successful")
+    const loading = document.getElementById("loading")
+    const form = useRef();
+  
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        loading.style.opacity = "1"
+        loading.style.zIndex = "2"
+      
+      emailjs.sendForm('service_80ih0if', 'template_d9refyl', form.current, 'user_2jIT9NA6dfZ3X4lKgbInB')
+        .then((result) => {
+          loading.style.opacity = "0"
+        loading.style.zIndex = "-1"
+            console.log(result.text);
+
+        }, (error) => { 
+            alert("The email service is currently down, please reach alextran474@gmail.com")
+            console.log(error.text);
+           
+        }); 
+       
+        successful.style.opacity = "1"
+        successful.style.zIndex = "2"
+      
+    };
+  
 
 
   return (
     <div className="modal">
+    <div id="loading">Loading 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"/></svg></div>
+  
+  
+    <div id="successful">Thanks We Received Your Message!</div>
+
+
 
 <svg onClick={() => props.modal(false) } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
 
@@ -56,13 +93,13 @@ const ContactModal = (props) => {
 
       <div className="modal__right">
         <h3>Send A Message My Way</h3>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input placeholder="John Smith..." />
-          <label>Email</label>
-          <input placeholder="johnsmith@gmail.com" />
+          <input placeholder="John Smith..." type="text" required name="user_name"/>
+          <label >Email</label>
+          <input placeholder="johnsmith@gmail.com" type="email" required name="user_email"/>
           <label>Message</label>
-          <textarea placeholder="johnsmith@gmail.com" />
+          <textarea placeholder="Message..." name="message"/>
 
           <button className="modal__right--button learn-more">
             <span className="modal__right--button circle" aria-hidden="true">

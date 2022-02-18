@@ -10,6 +10,9 @@ const Landing = (props) => {
   const modal = (state) => {
     {
       setshowmodal(state);
+      const successful = document.getElementById("successful")
+      successful.style.opacity = "0"
+      successful.style.zIndex = "-1"
 
       if (!showmodal) {
         document.body.classList += " modal__open";

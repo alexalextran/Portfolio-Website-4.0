@@ -802,6 +802,55 @@ MAIL MODAL
   width: 50px;
 }
 
+#loading{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  color: #ff4b27;
+  background-color: white;
+  border-radius: inherit;
+
+
+}
+
+#loading > svg{
+  width: 80px;
+  fill: #ff4b27;
+  animation: spin 1.5s infinite;
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+#successful{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  z-index: -1;
+  border-radius: inherit;
+  color: white;
+  opacity: 0;
+ transition: all 500ms;
+}
+
 .modal {
   position: absolute;
   display: flex;
@@ -820,7 +869,7 @@ MAIL MODAL
   width: 30px;
   position: absolute;
   top: 10px;
-  z-index: 1;
+  z-index: 100;
   right: 20px;
   fill: white;
   cursor: pointer;
