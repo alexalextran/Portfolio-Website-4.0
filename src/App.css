@@ -957,8 +957,23 @@ textarea:focus {
   opacity: 0;
   visibility: hidden;
 }
-
+@media(max-width: 1394px){
+  .homesvg{
+    width: 400px;
+    right: 10%;
+  }
+  
+  .landing__text{
+    width: 300px;
+    font-size: 12px;
+    left: 10%;
+  }
+}
 @media(max-width: 1024px){
+
+  nav >img {
+    margin-left: 100px;
+  }
 .nav__links > a {
   font-size: 12px;
   margin: 0px 6px ; 
@@ -1084,4 +1099,255 @@ height: 100px;
 }
 
 
+}
+
+@media(max-width: 768px){
+
+  .mail__icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    right: 60px;
+    bottom: 60px;
+  }
+  .mail__icon > svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav__links > a {
+    font-size: 8px;
+    margin: 0px 4px ; 
+    padding: 10px;
+  }
+
+  nav > img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .homesvg{
+    width: 200px;
+    right: 4%;
+  }
+  
+  .landing__text{
+    width: 150px;
+    font-size: 8px;
+    left: 4%;
+  }
+  
+  .socials{
+    margin-top: 20px;
+  }
+
+  .social__icon{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .landing__text > h1{
+    font-size: 20px;
+  }
+  
+  #aboutme{
+    height: auto;
+    padding: 50px 0px;
+  }
+  
+  #aboutme > div:first-child > img{
+    height: 170px;
+    width: auto;
+    margin-right: 20px;
+  }
+  
+  .aboutme__info--wrapper{
+    padding: 10px;
+    font-size: 8px;
+    width: 180px
+  }
+  
+  .aboutme__info--wrapper > div > h1{
+  font-size: 30px;
+  }
+  .aboutme__info--wrapper > div > ul{
+    margin-top: 10px;
+  
+  }
+  
+  .aboutme__info--wrapper > div >ul>  li{
+    margin-bottom: 10px;
+  }
+  
+  .skills__title--sub{
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  
+  .skills__using{
+    grid-gap: 10px;
+   grid-auto-columns: auto;
+    grid-template-columns: repeat(3, 90px)
+  }
+
+  .skills__using--card > svg, .skills__using--card > img, .skills__using--title{
+    font-size: 12px;
+    width: 50px !important;
+    height: auto !important;
+  }
+
+  .skills__using--card{
+    height: 130px;
+    display: flex;
+    align-items: center;
+  justify-content: end;
+  }
+
+  .carousel__item--wrapper > div > p{
+    font-size: 8px;
+  }
+
+  .carousel__item--wrapper > div:first-child {
+    width: 300px;
+  }
+
+  .portfolio__nav--button {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .carousel__title{
+    font-size: 30px;
+  }
+  
+  .carousel__item--wrapper{
+    height: 400px;
+    text-align: center;
+  }
+  .carousel__item{
+    margin-top: 30px;
+  }
+  
+  
+  .portfolio__cardimage{
+    width: 355px;
+  }
+  
+  .portfolio__cardtext--features, .portfolio__cardtext--description{
+    font-size: 8px;
+    padding-top: 6px;
+  }
+  
+  .portfolio__cardtext{
+    padding: 0px 10px ;
+    margin-bottom: 40px;
+  }
+  
+  .button-text{
+    font-size: 6px !important;
+  }
+    button.learn-more, button.learn-more .circle{
+    height: 0.8rem;
+    font-size: 6px;
+  }
+  button.learn-more{
+    width: 220px;
+  }
+
+ .carousel__button{
+   margin: 0px 70px;
+   font-size: 50px;
+ }
+ .carousel__nav{
+   font-size: 8px;
+ }
+
+ .container{
+   padding: 10px 20px;
+ }
+ .content{
+   font-size: 8px;
+   padding: 10px 10px;
+ }
+
+ .journey__title{
+   font-size: 30px;
+ }
+  
+  .stat{
+    text-align: center;
+    padding: 10px;
+  }
+  .stat>p:first-child{
+    font-size: 20px !important; 
+  }
+  .statistics__text{
+    font-size: 10px;
+  }
+  
+  .imagecomparison{
+  height: 500px;
+  }
+
+  .img-comp-container > h1{
+    font-size: 30px; 
+  }
+
+  .img-comp-container > p{
+    font-size: 8px;
+  }
+  
+  .img-comp-img > img, .img-comp-container{
+    width: 375px;
+    height: 200px;
+  
+  }
+
+  .imagecomparison__contact{
+    font-size: 8px;
+    bottom: 30px;
+  }
+  
+  footer > img{
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  
+  .modal{
+  font-size: 12px;
+  }
+  
+  .modal__left, .modal__right{
+    width: 300px;
+    height: 500px;
+  }
+  .modal__left > div:first-child, form{
+    padding: 20px;
+  }
+  
+  textarea{
+  height: 100px;
+  }
+
+}
+
+@media(max-width: 670px) {
+
+  .modal > svg{
+    fill: black;
+  }
+  .modal{
+    top: 550px;
+    width: 100%;
+    flex-direction: column;
+    }
+    
+    .modal__left, .modal__right{
+      border-radius: 0px;
+      width: 100%;
+      height: 550px;
+    }
 }
