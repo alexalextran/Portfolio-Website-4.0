@@ -12,7 +12,7 @@ const Mylanguages = () => {
       <h2 className="skills__title--sub">What I Use</h2>
       <div className="skills__using">
         <div className="skills__using--card">
-          <h3 className="skills__using--title">HMTL</h3>
+          <h3 className="skills__using--title">HTML</h3>
           <svg
             style={{ fill: "rgb(226,96,40)" }}
             xmlns="http://www.w3.org/2000/svg"

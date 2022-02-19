@@ -54,9 +54,9 @@ const Statistics = () => {
   
     function load() {
       loadonce = true;
-      animate(text1, 0, 13, 3000);
+      animate(text1, 0, 14, 3000);
       animate(text2, 0, calculateDate(), 3000);
-      animate(text3, 0, 6, 3000);
+      animate(text3, 0, 5, 3000);
     }
     function intoview() {
          text1 = document.getElementById("Projects");
