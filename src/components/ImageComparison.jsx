@@ -34,7 +34,7 @@ const Imagecomparison = () => {
           /* Insert slider */
           img.parentElement.insertBefore(slider, img);
           /* Position the slider in the middle: */
-          slider.style.top = (h / 2) + (slider.offsetHeight) + "px";
+          slider.style.top = (h / 2) + (slider.offsetHeight * 2) + "px";
           slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
 
           console.log((slider.offsetHeight / 2))

@@ -31,7 +31,7 @@ const Aboutme = () => {
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>
           </span>
-          <span className="button-text" >Download My Resume!</span>
+          <span className="button-text" onClick={() => window.alert("Still Editing My Resume!")} >Download My Resume!</span>
         </button>
         </div>
         </div>
