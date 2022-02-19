@@ -4,6 +4,7 @@ import reakt from "../assets/reactphotos/reakt.jpg";
 import adashacademy from "../assets/reactphotos/a-academy.jpg";
 import ecommerce from "../assets/reactphotos/react-ecommerce.jpg";
 import todo from "../assets/reactphotos/TODO.jpg";
+import comparisonphoto from "../assets/comparisonphoto.jpg";
 
 const Reactportfoliocards = () => {
   return (
@@ -29,6 +30,15 @@ const Reactportfoliocards = () => {
         features="Saved Highscore using local storage, tutorial modal, timer"
         image={reakt}
       />
+
+       <Portfoliocard
+      link="alextranportfolio.com"
+        title="E-PortfolioV4"
+        text="The website your on right now"
+        features="Intuitive Image Carousel, Image comparison Slider, Onscroll Animations, Working Email Service, Contact Modal"
+        image={comparisonphoto}
+      />
+
       <Portfoliocard
         title="TODO App"
         text="TODO Application with firebase integration. (STILL IN DEVELOPMENT)"

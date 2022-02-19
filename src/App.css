@@ -126,6 +126,8 @@ nav > img {
   position: relative;
   background: linear-gradient(250deg, var(--blue), 50%, rgb(245, 245, 245) 50%);
   height: 100vh;
+  max-height: 1200px;
+  min-height: 620px;
 }
 
 .homesvg {
