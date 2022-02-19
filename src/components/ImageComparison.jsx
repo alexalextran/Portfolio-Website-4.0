@@ -96,7 +96,7 @@ const Imagecomparison = () => {
         
             <div className="img-comp-container">
             <h1>My Progress</h1>
-            <p>Looking Back, I've come a long way ever since starting front end, from creating my first proper eportfolio to clean modern react websites that your seeing right now</p>
+            <p>Looking back, I've come a long way ever since starting front end, from creating my first proper eportfolio to clean modern react websites that your seeing right now</p>
             <div className="img-comp-img">
             <img src={comparisonnew}></img>
              </div>

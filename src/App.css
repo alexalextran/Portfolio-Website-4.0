@@ -266,9 +266,16 @@ Skills
   align-items: center;
 }
 
+
+.skills__using--card > svg, .skills__using--card > img{
+  width: 70px !important;
+  height: auto !important;
+}
+
+
 .skills__using--title {
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .skills__using {
@@ -1084,6 +1091,12 @@ font-size: 30px;
  grid-auto-columns: auto;
   grid-template-columns: repeat(3, 120px)
 }
+
+.skills__using--card > svg, .skills__using--card > img{
+  width: 60px !important;
+  height: auto !important;
+}
+
 
 .carousel__item--wrapper{
   height: 600px;
