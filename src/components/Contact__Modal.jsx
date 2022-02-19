@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef } from "react/cjs/react.development";
+import React, {useRef} from 'react';
 import reactjpg from "../assets/reactjpg.png";
 import emailjs, { init } from '@emailjs/browser';
 init("user_2jIT9NA6dfZ3X4lKgbInB");
