@@ -60,7 +60,7 @@ function scanDocument() {
 
   
   return (
-    <>
+    <div className='bodyWrapper'>
    <Landing logo={logo}/>
    <Aboutme />
    <Mylanguages />
@@ -69,7 +69,7 @@ function scanDocument() {
    <Statistics />
    <Imagecomparison />
    <Footer logo={logo}/>
-   </>
+   </div>
   );
 }
 
