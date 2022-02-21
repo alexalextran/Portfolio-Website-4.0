@@ -60,10 +60,7 @@ html {
 }
 
 /* 
-
 ANIMATIONS
-
-
 */
 
 
@@ -134,7 +131,7 @@ nav > img {
 
 #landing {
   position: relative;
-  background: linear-gradient(250deg, var(--blue), 50%, rgb(172, 0, 0) 50%);
+  background: linear-gradient(250deg, var(--blue), 50%, rgb(245, 245, 245) 50%);
   height: 100vh;
   max-height: 1200px;
   min-height: 620px;
@@ -194,9 +191,7 @@ nav > img {
 }
 
 /*
-
 ABOUTME
-
 */
 
 #aboutme {
@@ -245,9 +240,7 @@ ABOUTME
 }
 
 /*
-
 Skills
-
 */
 #skills {
   display: flex;
@@ -401,9 +394,7 @@ Skills
 }
 
 /* 
-
 CAROUSEL
-
 */
 
 #projects {
@@ -654,8 +645,6 @@ button:hover .button-text {
 }
 
 /* Languages 
-
-
 */
 
 #Statistics {
