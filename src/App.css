@@ -35,6 +35,7 @@ section {
     rgba(250, 250, 250, 1) 0%,
     rgba(210, 210, 210, 1) 100%
   );
+  overflow: hidden;
 
   border: 1px solid var(--blue);
 }
@@ -42,7 +43,10 @@ section {
 html {
   background: url("/src/assets/statsbackground.jpg") fixed;
   background-position-y: 1000px;
+  
 }
+
+
 
 .clickable:hover {
   transform: translateY(-10px);
@@ -57,6 +61,8 @@ ANIMATIONS
 
 
 */
+
+
 
 .typing {
   position: relative;
@@ -872,6 +878,7 @@ MAIL MODAL
   opacity: 0;
   transition: all 500ms;
   z-index: -1 ;
+  
 }
 
 .modal > svg {
@@ -1172,8 +1179,8 @@ height: 100px;
     height: 50px;
     display: flex;
     align-items: center;
-    right: 60px;
-    bottom: 60px;
+    right: 20px;
+    bottom: 20px;
   }
   .mail__icon > svg{
     width: 30px;
