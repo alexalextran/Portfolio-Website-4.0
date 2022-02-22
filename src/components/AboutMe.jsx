@@ -1,5 +1,6 @@
 import React from "react";
 import profilepic from "../assets/PROFILEPIC.jpg";
+import resume from "../assets/AlexTran.docx"
 
 const Aboutme = () => {
   return (
@@ -27,12 +28,13 @@ const Aboutme = () => {
             <li className="aboutme__info--li"><b>University:</b> University Of Technology Sydney</li>
             <li className="aboutme__info--li"><b>Availability:</b> Interested In Any Front End Position</li>
           </ul>
-          <button className="portfolio__cardtext--button learn-more">
+          <a download href={resume}>
+          <button  className="portfolio__cardtext--button learn-more">
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>
           </span>
-          <span className="button-text" onClick={() => window.alert("Still Editing My Resume!")} >Download My Resume!</span>
-        </button>
+          <span className="button-text" >Download My Resume!</span>
+        </button></a>
         </div>
         </div>
       </div>
