@@ -19,7 +19,7 @@ const Reactportfoliocards = () => {
       <Portfoliocard
       link="https://alexalextran.github.io/react-ecommerce-practice/"
         title="React E-commerce"
-        text="My attempt at an e-commerce store using react, this was probably my hardest ever attempted project, because of how unfamiliar I was with react, and I had to use a ton of tutorials to get through it all."
+        text="My attempt at an e-commerce store using react, this was a difficult project for me, because of how unfamiliar I was with react, however using online resources i was able to quickly learn about react hooks, which were a game changer for me and helped me get overcome most of my issues."
         features="include; mock api data, dynamic cart page, filter function, skeleton loading state"
         image={ecommerce}
       />
