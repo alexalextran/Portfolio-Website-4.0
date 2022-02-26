@@ -16,6 +16,23 @@ const Reactportfoliocards = () => {
         features="video carousel, fixed navbar, youtube api usage, inbuilt video player, onscroll animations, searchbar function, statistics counter animation, working email contact service, loading animation"
         image={adashacademy}
       />
+
+<Portfoliocard
+      link="alextranportfolio.com"
+        title="E-PortfolioV4"
+        text="The website your on right now"
+        features="Intuitive Image Carousel, Image comparison Slider, Onscroll Animations, Working Email Service, Contact Modal"
+        image={comparisonphoto}
+      />
+
+      <Portfoliocard
+       link="https://alexalextran.github.io/todo_app/#"
+        title="TODO App"
+        text="An imtermediate TODO application that has firebase integration, allowing users to login and manage their own TODO's "
+        features="Firebase Integration, filter functions, responsive data management, user authentication, modern UI design"
+        image={todo}
+      />
+
       <Portfoliocard
       link="https://alexalextran.github.io/react-ecommerce-practice/"
         title="React E-commerce"
@@ -31,20 +48,7 @@ const Reactportfoliocards = () => {
         image={reakt}
       />
 
-       <Portfoliocard
-      link="alextranportfolio.com"
-        title="E-PortfolioV4"
-        text="The website your on right now"
-        features="Intuitive Image Carousel, Image comparison Slider, Onscroll Animations, Working Email Service, Contact Modal"
-        image={comparisonphoto}
-      />
-
-      <Portfoliocard
-        title="TODO App"
-        text="TODO Application with firebase integration. (STILL IN DEVELOPMENT)"
-        features="(STILL IN DEVELOPMENT)"
-        image={todo}
-      />
+     
     </div>
   );
 };
