@@ -286,7 +286,7 @@ Skills
 
 .skills__using {
   display: grid;
-  grid-template-columns: repeat(5, 120px);
+  grid-template-columns: repeat(4, 120px);
   grid-gap: 70px;
   margin-bottom: 50px;
 }
