@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6714dfa3.css",
-    "main.js": "/static/js/main.15dbb780.js",
+    "main.css": "/static/css/main.85e21266.css",
+    "main.js": "/static/js/main.8c2dadfa.js",
     "static/js/787.d59d2387.chunk.js": "/static/js/787.d59d2387.chunk.js",
     "static/media/PROFILEPIC.jpg": "/static/media/PROFILEPIC.e7ea2aef5647adde3c65.jpg",
     "static/media/TODO.jpg": "/static/media/TODO.e38a8bd3d740480771a4.jpg",
@@ -25,14 +25,16 @@
     "static/media/reactjpg.png": "/static/media/reactjpg.20adfb35ae6a6e5817bf.png",
     "static/media/AlexTran.docx": "/static/media/AlexTran.920dddf4ca42aa3570a9.docx",
     "static/media/landingsvg.svg": "/static/media/landingsvg.ad02aea0c1be5034fa0d2e119c3b8215.svg",
+    "static/media/sass.svg": "/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/firebase.svg": "/static/media/firebase.e6583a29712875c8977afcba1d0b6883.svg",
     "static/media/figma.svg": "/static/media/figma.272540cc0fbc6daff2b7c6ac778e39e9.svg",
     "index.html": "/index.html",
-    "main.6714dfa3.css.map": "/static/css/main.6714dfa3.css.map",
-    "main.15dbb780.js.map": "/static/js/main.15dbb780.js.map",
+    "main.85e21266.css.map": "/static/css/main.85e21266.css.map",
+    "main.8c2dadfa.js.map": "/static/js/main.8c2dadfa.js.map",
     "787.d59d2387.chunk.js.map": "/static/js/787.d59d2387.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6714dfa3.css",
-    "static/js/main.15dbb780.js"
+    "static/css/main.85e21266.css",
+    "static/js/main.8c2dadfa.js"
   ]
 }
