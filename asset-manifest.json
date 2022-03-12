@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85e21266.css",
-    "main.js": "/static/js/main.8c2dadfa.js",
+    "main.js": "/static/js/main.7bfb15e6.js",
     "static/js/787.d59d2387.chunk.js": "/static/js/787.d59d2387.chunk.js",
     "static/media/PROFILEPIC.jpg": "/static/media/PROFILEPIC.e7ea2aef5647adde3c65.jpg",
     "static/media/TODO.jpg": "/static/media/TODO.e38a8bd3d740480771a4.jpg",
@@ -10,6 +10,7 @@
     "static/media/react-ecommerce.jpg": "/static/media/react-ecommerce.5fd4f9336310de767cde.jpg",
     "static/media/phil.jpg": "/static/media/phil.e2433c7aabce40798094.jpg",
     "static/media/eportv3.jpg": "/static/media/eportv3.f3ae93333f5f29999432.jpg",
+    "static/media/notflix.jpg": "/static/media/notflix.f1df4c358a3c898ceb1b.jpg",
     "static/media/mysql.png": "/static/media/mysql.ef238c26ec64482ce26d.png",
     "static/media/a-academy.jpg": "/static/media/a-academy.fa813d066d05380f328b.jpg",
     "static/media/statsbackground.jpg": "/static/media/statsbackground.f62026321d5dbe64d387.jpg",
@@ -30,11 +31,11 @@
     "static/media/figma.svg": "/static/media/figma.272540cc0fbc6daff2b7c6ac778e39e9.svg",
     "index.html": "/index.html",
     "main.85e21266.css.map": "/static/css/main.85e21266.css.map",
-    "main.8c2dadfa.js.map": "/static/js/main.8c2dadfa.js.map",
+    "main.7bfb15e6.js.map": "/static/js/main.7bfb15e6.js.map",
     "787.d59d2387.chunk.js.map": "/static/js/787.d59d2387.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85e21266.css",
-    "static/js/main.8c2dadfa.js"
+    "static/js/main.7bfb15e6.js"
   ]
 }
