@@ -15,9 +15,8 @@ const Aboutme = () => {
         <div>
           <h1 className="aboutme__info--title">About Me</h1>
           <p>
-            Im a student programmer that is currently learning about front end
-            development, i aspire to one day become a senior react developer or
-            a full stack developer
+            I'm a self-taught front end developer who is learning backend software development within my computer science degree at university. 
+            I aspire to one day become a senior react developer or a full stack developer
           </p>
         </div>
         <div>

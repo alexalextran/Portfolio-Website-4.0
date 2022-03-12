@@ -32,7 +32,7 @@ const Landing = (props) => {
         <h1 className="landing__text--name typing">Alex Tran</h1>
 
         <div className="landing__text--title">
-          <span>WEB DESIGNER</span>
+          <span>Self-Taught Front End Developer</span>
         </div>
 
         <p>
