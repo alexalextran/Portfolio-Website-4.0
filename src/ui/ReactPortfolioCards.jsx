@@ -5,6 +5,7 @@ import adashacademy from "../assets/reactphotos/a-academy.jpg";
 import ecommerce from "../assets/reactphotos/react-ecommerce.jpg";
 import todo from "../assets/reactphotos/TODO.jpg";
 import comparisonphoto from "../assets/comparisonphoto.jpg";
+import notflix from "../assets/reactphotos/notflix.jpg"
 
 const Reactportfoliocards = () => {
   return (
@@ -34,6 +35,14 @@ const Reactportfoliocards = () => {
       />
 
       <Portfoliocard
+      link="https://alexalextran.github.io/notflix/"
+        title="Notflix"
+        text="A scalable and fully responsive netflix clone built using react and TMBD movie api that provides daily and weekly movie updates."
+        features="Scalable, responsive, multiplatform, TMDB api, skeleton loading state, user authentication"
+        image={notflix}
+      />
+
+      <Portfoliocard
       link="https://alexalextran.github.io/react-ecommerce-practice/"
         title="React E-commerce"
         text="My attempt at an e-commerce store using react, this was a difficult project for me, because of how unfamiliar I was with react, however using online resources i was able to quickly learn about react hooks, which were a game changer for me and helped me get overcome most of my issues."
@@ -47,6 +56,7 @@ const Reactportfoliocards = () => {
         features="Saved Highscore using local storage, tutorial modal, timer"
         image={reakt}
       />
+      
 
      
     </div>
