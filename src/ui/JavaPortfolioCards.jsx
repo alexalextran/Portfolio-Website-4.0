@@ -18,10 +18,10 @@ const Javaportfoliocards = () => {
              title="Cafe GUI"
               text="This was a Pure GUI project to see how much I could do with JAVA gui libraries for a first time, this was the first time I ever integrated a UI with proper computing logic, which taught me alot about how important a strong UI is" features="receipt function" image={cafejava}/>
             
-            <Portfoliocard
+            {/* <Portfoliocard
             link="https://github.com/alexalextran/MINESWEEPER-CLONE"
             title="Minesweeper Clone"
-             text="Minesweeper clone that I attempted with zero game library knowledge, but by performing extensive research using online resources such as youtube and stack overflow i was able to learn about the core fundamentals such as event listeners and state." features="Timer, reset feature, win&lose condition" image={minesweeper}/>
+             text="Minesweeper clone that I attempted with zero game library knowledge, but by performing extensive research using online resources such as youtube and stack overflow i was able to learn about the core fundamentals such as event listeners and state." features="Timer, reset feature, win&lose condition" image={minesweeper}/> */}
         </div>
     );
 }
