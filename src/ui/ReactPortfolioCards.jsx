@@ -6,10 +6,20 @@ import ecommerce from "../assets/reactphotos/react-ecommerce.jpg";
 import todo from "../assets/reactphotos/TODO.jpg";
 import comparisonphoto from "../assets/comparisonphoto.jpg";
 import notflix from "../assets/reactphotos/notflix.jpg";
+import mg2 from "../assets/reactphotos/react-mg-2.jpg";
 
 const Reactportfoliocards = () => {
   return (
     <div>
+
+<Portfoliocard
+        link="https://alexalextran.github.io/memory-game-v2/"
+        title="Memory Game V2"
+        text="A fully functional memory game based off the previous one, but completely reworked with react, includes a working leaderboard that compares using level and time"
+        features="responsive, multiplatform, firebase and firestore, working leaderboard, secure user authentication, grid customization, react spring animations"
+        image={mg2}
+      />
+
       <Portfoliocard
         link="https://alexalextran.github.io/notflix/"
         title="Notflix"
